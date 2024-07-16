@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/*font-family: "Playfair Display", serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* font-family: "Poppins", sans-serif;*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*---------------------------------------*/
+
+
+@media (min-width: 1200px) {
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+        max-width: 1340px;
+    }
+}
+.main-container{
+	background: url(../images/landingbg.png);
+	background-attachment: fixed;
+	background-size:100%; 
+}
+.logo-section {
+    padding-top: 57px;
+}
+.landingtitle h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 66.65px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+.landingtitle h1 span {
+    color: #e3d153;
+    display: block;
+     font-family: "Playfair Display", serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 66.65px;
+    text-align: left;
+}
+.landingtitle h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: #fff;
+    margin-top: 95px;
+}
+ul.innersectionbutton {
+    padding: 0;
+    margin: 32px 0 0 0;
+}
+ul.innersectionbutton li {
+    list-style: none;
+    display: inline-block;
+    border: 1px solid #E2D152;
+    padding: 25px 18px;
+    border-radius: 6px;
+    width: 48%;
+    margin: 0px 5px 0 5px;
+    min-height: 160px;
+    vertical-align: top;
+}
+.innersectionbutton li h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 45px;
+    text-align: left;
+    color: #E2D152;
+    background: url(../images/arrow-up-right.svg) 183px 4px;
+    background-repeat: no-repeat;
+}
+.innersectionbutton li:nth-child(2) h2 {
+    background: url(../images/arrow-up-right.svg) 124px 4px;
+    background-repeat: no-repeat;
+}
+.innersectionbutton li h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    color: #fff;
+}
+.col-md-6.landingcontent {
+    margin-top: 59px;
+}
+.landingcontent p {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #fff;
+}
+.footer {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+	margin-top: 23px;
+/*    padding: 23px 93px 31px 93px;*/
+}
+.footer .copyright{
+    border-top: 1px solid rgb(255 255 255 / 50%);
+	 padding: 23px 0px 31px 0px;
+	text-align: center;
+}
+.footer .copyright a{
+	 color:  #E2D152;
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+	ul.innersectionbutton li {
+    padding: 25px 7px;
+    width: 47%;
+}
+}
+@media only screen and (max-width: 992px) {
+	    ul.innersectionbutton li {
+			padding: 25px 18px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+	.col-md-6.landingcontent {
+    max-width: 100% ! IMPORTANT;
+    flex: 100%;
+}
+}
+@media only screen and (max-width: 769px) {
+	.landingtitle .col-md-6.col-sm-12 {
+    width: 100%;
+    flex: 100%;
+    max-width: 100%;
+}
+	.landingtitle .col-md-6 .row {
+    margin: 0 auto;
+    display: block;
+}
+	.main-container{
+	background: url(../images/mobilelandingbg.jpg);
+	background-attachment: fixed;
+	background-size:100%; 
+}
+	.logo-section {
+    padding-top: 17px;
+    text-align: center;
+}
+	.landingtitle h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 14px;
+	line-height: normal;
+}
+	.landingtitle h1 span {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+}
+	.landingtitle h4 {
+    font-size: 20px;
+    line-height: normal;
+    margin-top: 39px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+	.innersectionbutton li h2 {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+    background: url(../images/arrow-up-right.svg) 66% 4px;
+		 background-repeat: no-repeat;
+}
+	.innersectionbutton li h3 {
+    text-align: center;
+}
+	.innersectionbutton li:nth-child(2) h2 {
+    background: url(../images/arrow-up-right.svg) 65% 4px;
+		 background-repeat: no-repeat;
+}
+	.col-md-6.landingcontent {
+    margin-top: 12px;
+}
+	.landingcontent p {
+    line-height: 20px;
+    text-align: center;
+    color: #858585;
+}
+	.footer {
+    line-height: 21px;
+    text-align: center;
+    color: rgb(255 255 255 / 50%);
+    margin-top: 23px;
+}
+}
+@media only screen and (max-width: 546px) {
+	.innersectionbutton li h2 {
+    background: url(../images/arrow-up-right.svg) 68% 4px;
+		 background-repeat: no-repeat;
+}
+	.innersectionbutton li:nth-child(2) h2 {
+    background: url(../images/arrow-up-right.svg) 67% 4px;
+		 background-repeat: no-repeat;
+}
+}
+@media only screen and (max-width: 486px) {
+	.innersectionbutton li h2 {
+    background: url(../images/arrow-up-right.svg) 70% 4px;
+		 background-repeat: no-repeat;
+}
+	.innersectionbutton li:nth-child(2) h2 {
+    background: url(../images/arrow-up-right.svg) 67% 4px;
+		 background-repeat: no-repeat;
+}
+}
+@media only screen and (max-width: 442px) {
+	.innersectionbutton li h2 {
+    background: url(../images/arrow-up-right.svg) 72% 4px;
+		 background-repeat: no-repeat;
+}
+	.innersectionbutton li:nth-child(2) h2 {
+    background: url(../images/arrow-up-right.svg) 67% 4px;
+		 background-repeat: no-repeat;
+}
+}
+@media only screen and (max-width: 412px) {
+	.innersectionbutton li h2 {
+    background: url(../images/arrow-up-right.svg) 75% 4px;
+		 background-repeat: no-repeat;
+}
+	.innersectionbutton li:nth-child(2) h2 {
+    background: url(../images/arrow-up-right.svg) 69% 4px;
+		 background-repeat: no-repeat;
+}
+}
+@media only screen and (max-width: 388px) {
+	.innersectionbutton li h2 {
+    background: url(../images/arrow-up-right.svg) 80% 4px;
+		 background-repeat: no-repeat;
+}
+	.innersectionbutton li:nth-child(2) h2 {
+    background: url(../images/arrow-up-right.svg) 72% 4px;
+		 background-repeat: no-repeat;
+}
+}
